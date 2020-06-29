@@ -7,7 +7,7 @@ import ua.turskyi.gdgfinder.network.GdgChapter
 import ua.turskyi.gdgfinder.search.GdgListAdapter
 
 /**
- * When there is no Mars property data (data is null), hide the [RecyclerView], otherwise show it.
+ * When there is no property data (data is null), hide the [RecyclerView], otherwise show it.
  */
 @BindingAdapter("listData")
 fun bindRecyclerView(recyclerView: RecyclerView, data: List<GdgChapter>?) {
