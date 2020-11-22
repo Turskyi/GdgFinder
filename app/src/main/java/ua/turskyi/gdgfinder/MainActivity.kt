@@ -34,16 +34,16 @@ class MainActivity : AppCompatActivity() {
      * Setup Navigation for this Activity
      */
     private fun setupNavigation() {
-        // first find the nav controller
+        /* first find the nav controller */
         val navController = findNavController(R.id.nav_host_fragment)
 
         setSupportActionBar(binding.toolbar)
 
-        // then setup the action bar, tell it about the DrawerLayout
+        /* then setup the action bar, tell it about the DrawerLayout */
         setupActionBarWithNavController(navController, binding.drawerLayout)
 
 
-        // finally setup the left drawer (called a NavigationView)
+        /* finally setup the left drawer (called a NavigationView) */
         binding.navigationView.setupWithNavController(navController)
 
         navController.addOnDestinationChangedListener { _, destination: NavDestination, _ ->

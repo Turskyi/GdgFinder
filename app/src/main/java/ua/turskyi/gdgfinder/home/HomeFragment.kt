@@ -24,7 +24,7 @@ class HomeFragment : Fragment() {
         binding.viewModel = viewModel
 
         viewModel.navigateToSearch.observe(viewLifecycleOwner,
-            Observer<Boolean> { shouldNavigate ->
+            { shouldNavigate ->
                 if (shouldNavigate == true) {
                     val navController = binding.root.findNavController()
                     navController.navigate(R.id.action_homeFragment_to_gdgListFragment)

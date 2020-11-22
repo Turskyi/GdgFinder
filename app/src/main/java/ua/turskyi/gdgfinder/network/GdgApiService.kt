@@ -10,9 +10,10 @@ import retrofit2.http.GET
 
 private const val BASE_URL = "https://developers.google.com/community/gdg/groups/"
 interface GdgApiService {
+//  TODO: end point not working anymore
     @GET("directory.json")
     fun getChaptersAsync():
-    // The Coroutine Call Adapter allows us to return a Deferred, a Job with a result
+    /* The Coroutine Call Adapter allows us to return a Deferred, a Job with a result */
             Deferred<GdgResponse>
 }
 private val moshi = Moshi.Builder()
